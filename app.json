@@ -1,5 +1,15 @@
 {
-  "plugins": [
-    "@react-native-community/datetimepicker"
-  ]
+  "expo": {
+    "name": "UberCloneConductor",
+    "slug": "ubercloneconductor",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#174D75"
+    },
+    "plugins": [
+      "@react-native-community/datetimepicker"
+    ]
+  }
 }

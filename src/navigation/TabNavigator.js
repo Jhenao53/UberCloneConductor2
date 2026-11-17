@@ -5,6 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 import PersonalDetails from '../screens/PersonalDetails';
 import CarDetails from '../screens/CarDetails';
+import DocumentsPayments from '../screens/DocumentsPayments';
 
 const Tab = createBottomTabNavigator();
 
@@ -29,8 +30,10 @@ export default function TabNavigator() {
 
           if (route.name === 'Datos personales') {
             iconName = 'person-circle-outline';
-          } else {
+          } else if (route.name === 'Vehículo') {
             iconName = 'car-outline';
+          } else {
+            iconName = 'document-text-outline';
           }
 
           return (
@@ -52,8 +55,11 @@ export default function TabNavigator() {
         name="Vehículo"
         component={CarDetails}
       />
+
+      <Tab.Screen
+        name="Documentos y pagos"
+        component={DocumentsPayments}
+      />
     </Tab.Navigator>
   );
 }
-
-
